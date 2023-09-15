@@ -1,0 +1,176 @@
+:root{
+    --subtitle-font-size: 18px;
+}
+
+.centered-text{
+    text-align: center
+}
+
+.subtitle-text{
+    text-transform: uppercase;
+    font-size: var(--subtitle-font-size);
+    color: #8c8c8c;
+    margin-bottom: 15px;
+}
+
+/* Home */
+
+.shop-page-spacing{
+    padding-top: 0 !important;
+    padding-bottom: 80px;
+}
+
+.centered-vertical-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.restaurant-image-container{
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+/* Shops */
+
+div.ui.items img{
+    object-fit:contain;
+}
+
+.shop-item-image-container{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-right: 15px;
+    object-fit: cover !important;
+}
+
+.shop-item-image-container > img{
+    width: 100%;
+    background: #cecece;
+}
+
+
+/* Text on image */
+.image-text-wrapper{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    /* border-radius: 15px; */
+}
+
+.image-text-wrapper:before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,0.5);
+    z-index:10;
+    user-select: none;
+}
+
+.object-fitted-image{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+div.image-text-wrapper img{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container{
+    width: 100%;
+    position: absolute;
+    top:0;
+    z-index: 20;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.text-container > .ui.header{
+    color: white;
+}
+
+/* styling the default menu tabs */
+.menu-tabs > .ui.menu{
+    display:flex;
+    justify-content: center;
+}
+
+.menu-tabs .ui.attached.segment{
+    width: 100% !important;
+}
+
+
+.menu-tabs > .ui.pointing.secondary.menu{
+    background: var(--bg-light)
+}
+
+/* styles tab menu text */
+.ui.pointing.secondary.menu > .item{
+    color: var(--primary) !important;
+    padding: 12px 25px;
+    text-transform: uppercase;
+}  
+
+/* changes bottom border color or acitve menu items */
+.ui.pointing.secondary.menu > .item.active{
+    border-bottom: 2px solid var(--primary) !important;
+}  
+
+/* style icons in item components to have a a greater spacing*/
+.grouped-icon-info .icon{
+    margin-right: 15px;
+}
+
+/* style item components to have a greater vertical padding*/
+.grouped-icon-info .item{
+    padding: 5px 0;
+}
+
+/* Carousel */
+.slick-slider.slick-initialized{
+    /* margin: 0 25px 50px 25px; */
+    margin-bottom: 50px;
+}
+
+.slick-arrow:before{
+    color: white !important;
+}
+
+.slick-arrow.slick-prev{
+    left: 18px;
+    z-index: 10;
+}
+
+.slick-arrow.slick-next{
+    right: 18px;
+}
+
+/* .test-wrapper:not(:last-child){
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--shape);
+} */

@@ -1,0 +1,112 @@
+
+.admin-body-content{
+    height: calc(100vh - var(--navbar-height) - var(--bottom-bar-height));
+    margin-bottom: 15px !important;
+    max-height: 100% !important;
+    overflow:auto !important;
+}
+
+
+/* does something to the sidebar to make it look alright */
+.pushable:not(body) {
+    transform: none;
+}
+
+.ui.sidebar{
+    top: var(--navbar-height) !important;
+    height: calc(100% - var(--navbar-height)) !important;
+    border: 0 !important;
+}
+  
+.pushable:not(body) > .ui.sidebar,
+.pushable:not(body) > .fixed,
+.pushable:not(body) > .pusher:after {
+    position: fixed;
+}
+
+.sidebar{
+    
+}
+
+
+.sidebar-margin{
+    margin-left: var(--sidebar-width) !important;
+}
+.ui.left.sidebar{
+    width: var(--sidebar-width) !important;
+    position: fixed !important;
+}
+
+.sidebar.menu{
+    width: var(--sidebar-width) !important
+}
+/* Admin sidebar */
+
+.admin-sidebar{
+    z-index: 10 !important;
+}
+
+.admin-sidebar-content{
+    
+}
+
+.sidebar-item-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.sidebar-item-container{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    cursor:pointer;
+}
+
+.sidebar-item-container:hover{
+    /* background: var(--bg-light); */
+    background: rgb(70, 70, 70) !important;
+}
+
+.sidebar-icon{
+    margin-right: 8px !important;
+}
+
+.delete-btn{
+    cursor: pointer;
+    /* these 2 styles are to allow the hover style of the product name to go undernearth
+    the delete button as well as be ignored by the sidebar link */
+    position: absolute;
+    right:5px;
+}
+
+/* Suggestion input LAbel Field */
+
+.suggestions-wrapper{
+    position:relative;
+    margin-top: 10px;
+}
+
+
+.suggestions-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 10;
+    border: 1px solid #cecece;
+    width: 100%
+}
+
+.suggestion{
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.suggestion:hover{
+    background: var(--text-hover-bg-color);
+
+}

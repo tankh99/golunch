@@ -1,0 +1,94 @@
+:root{
+  --bottom-bar-height: 68px;
+  --bottom-bar-vertical-padding: 15px;
+}
+
+
+/* General */
+
+
+.img-thumbnail{
+    width:100%;
+    min-height:200px;
+    max-height: 400px;
+    object-fit: contain;
+    
+}
+
+.fixed-form-buttons{
+    position:fixed;
+    width:100%;
+    height: var(--bottom-bar-height);
+    bottom:0;
+    right:0;
+    padding: var(--bottom-bar-vertical-padding) 25px;
+
+    background:white;
+    border-top: 2px solid #ccc;
+    display: flex;
+    justify-content: flex-end
+
+}
+
+/* Login */
+
+.form-container{
+    /* margin-bottom: calc(var(--bottom-bar-height) + var(--bottom-bar-vertical-padding) * 2); */
+}
+
+.centered-form-container{
+    align-items: center;
+}
+
+.centered-form{
+    padding: 10px;
+}
+
+/* Shop Items */
+
+.add-item-btn{
+    cursor: pointer;
+    width: 100% !important;
+}
+
+.dynamic-form-container{
+    /* background: var(--bg-light); */
+    margin-top: 30px !important;
+}
+
+.dynamic-add-btn-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px 15px 10px;
+}
+
+.dynamic-add-btn{
+    
+}
+
+.dynamic-card:not(:last-child){
+    margin-bottom: 15px !important;
+}
+
+
+.dynamic-card{
+    background: var(--bg-light);
+    padding: 15px;
+}
+
+.shop-item{
+    width: 100% !important;
+
+}
+
+/* Error */
+
+.input-error{
+    border: 1px solid red !important;
+}
+
+.error-msg{
+    color: red
+}
